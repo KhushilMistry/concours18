@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600");
+
+a.white-mode, a.white-mode:link, a.white-mode:visited, a.white-mode:active {
+    font-family: "Montserrat";
+    font-size: 12px;
+    text-decoration: none;
+    background: #212121;
+    padding: 4px 8px;
+    color: #f7f7f7;
+}
+
+a.white-mode:hover, a.white-mode:link:hover, a.white-mode:visited:hover, a.white-mode:active:hover {
+    background: #edf3f8;
+    color: #212121;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: #111111;
+}
+
+.title {
+    z-index: 10;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 250px;
+    transform: translateX(-50%) translateY(-50%);
+    font-family: "Montserrat";
+    text-align: center;
+    width: 100%;
+}
+
+.title h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-weight: 100;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    color: #EEEEEE;
+    letter-spacing: 2px;
+}
+
+.video-div {
+    z-index : 1;
+    height : 50vh;
+}
+
+.col-sm {
+    padding : 0px;
+}
+
+canvas {
+    position: absolute;
+    top : 0;
+    bottom : 0;
+}
+
+#cricket {
+    opacity:0.35;
+    -moz-opacity:0.35;
+    filter:alpha(opacity=35);
+    background-image: url(../assets/gif/home/cricket.gif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#football {
+    opacity:0.35;
+    -moz-opacity:0.35;
+    filter:alpha(opacity=35);
+    background-image: url(../assets/gif/home/football.gif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#volleyball {
+    opacity:0.35;
+    -moz-opacity:0.35;
+    filter:alpha(opacity=35);
+    background-image: url(../assets/gif/home/volleyball.gif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#tabletennis {
+    opacity:0.35;
+    -moz-opacity:0.35;
+    filter:alpha(opacity=35);
+    background-image: url(../assets/gif/home/tabletennis.gif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#badminton {
+    opacity:0.35;
+    -moz-opacity:0.35;
+    filter:alpha(opacity=35);
+    background-image: url(../assets/gif/home/badminton.gif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#basketball {
+    opacity:0.35;
+    -moz-opacity:0.35;
+    filter:alpha(opacity=35);
+    background-image: url(../assets/gif/home/basketball.gif);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
