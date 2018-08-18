@@ -169,4 +169,7 @@ function update() {
   requestAnimationFrame(update.bind(this));
 }
 
-update();
+window.onload = function(){
+  document.getElementById("icon").style.display = "none";
+  update();
+}
