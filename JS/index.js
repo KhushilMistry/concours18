@@ -171,5 +171,6 @@ function update() {
 
 window.onload = function(){
   document.getElementById("icon").style.display = "none";
+  document.getElementById("container-div").style.display = "block";
   update();
 }

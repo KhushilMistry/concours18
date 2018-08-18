@@ -201,3 +201,7 @@ body {
 @keyframes icon {
     to { transform:rotate(360deg); }
 }
+
+#container-div {
+    display : none;
+}
