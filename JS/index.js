@@ -17,7 +17,7 @@ var _createClass = function () {
 }();
 function _classCallCheck(instance, Constructor) {
   if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
+    console.log("Cannot call a class as a function");
   }
 }
 var particles = [];
@@ -40,61 +40,59 @@ var canvas = c1.context;
 // $("body").append(tela);
 $("body").append(c3.canvas);
 writeText(c2.canvas, c2.context, "CONCOURS");
-var
+var Particle = function () {
+  function Particle(canvas, options) {
+    _classCallCheck(this, Particle);
+    var random = Math.random();
+    this.canvas = canvas;
+    this.x = options.x;
+    this.y = options.y;
+    this.s = 3 + Math.random();
+    this.a = 0;
+    this.w = $(window).width();
+    this.h = $(window).height();
+    this.radius = 0.5 + Math.random() * 20;
+    this.color = this.radius > 5 ? "#FF5E4C" : "#ED413C"; //this.randomColor()
+  }
 
-  Particle = function () {
-    function Particle(canvas, options) {
-      _classCallCheck(this, Particle);
-      var random = Math.random();
-      this.canvas = canvas;
-      this.x = options.x;
-      this.y = options.y;
-      this.s = 3 + Math.random();
-      this.a = 0;
-      this.w = $(window).width();
-      this.h = $(window).height();
-      this.radius = 0.5 + Math.random() * 20;
-      this.color = this.radius > 5 ? "#FF5E4C" : "#ED413C"; //this.randomColor()
+  _createClass(Particle, [{
+    key: "randomColor", value: function randomColor() {
+      var colors = ["#FF5E4C", "#FFFFFF"];
+      return colors[this.randomIntFromInterval(0, colors.length - 1)];
     }
+  }, {
+    key: "randomIntFromInterval", value: function randomIntFromInterval(min, max) {
+      return Math.floor(Math.random() * (max - min + 1) + min);
+    }
+  }, {
+    key: "render", value: function render() {
+      this.canvas.beginPath();
+      this.canvas.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+      this.canvas.lineWidth = 2;
+      this.canvas.fillStyle = this.color;
+      this.canvas.fill();
+      this.canvas.closePath();
+    }
+  }, {
+    key: "move", value: function move() {
+      //this.swapColor()
+      this.x += Math.cos(this.a) * this.s;
+      this.y += Math.sin(this.a) * this.s;
+      this.a += Math.random() * 0.8 - 0.4;
 
-    _createClass(Particle, [{
-      key: "randomColor", value: function randomColor() {
-        var colors = ["#FF5E4C", "#FFFFFF"];
-        return colors[this.randomIntFromInterval(0, colors.length - 1)];
+      if (this.x < 0 || this.x > this.w - this.radius) {
+        return false;
       }
-    }, {
-      key: "randomIntFromInterval", value: function randomIntFromInterval(min, max) {
-        return Math.floor(Math.random() * (max - min + 1) + min);
-      }
-    }, {
-      key: "render", value: function render() {
-        this.canvas.beginPath();
-        this.canvas.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
-        this.canvas.lineWidth = 2;
-        this.canvas.fillStyle = this.color;
-        this.canvas.fill();
-        this.canvas.closePath();
-      }
-    }, {
-      key: "move", value: function move() {
-        //this.swapColor()
-        this.x += Math.cos(this.a) * this.s;
-        this.y += Math.sin(this.a) * this.s;
-        this.a += Math.random() * 0.8 - 0.4;
 
-        if (this.x < 0 || this.x > this.w - this.radius) {
-          return false;
-        }
-
-        if (this.y < 0 || this.y > this.h - this.radius) {
-          return false;
-        }
-        this.render();
-        return true;
+      if (this.y < 0 || this.y > this.h - this.radius) {
+        return false;
       }
-    }]);
-    return Particle;
-  }();
+      this.render();
+      return true;
+    }
+  }]);
+  return Particle;
+}();
 
 
 function createCanvas(properties) {
@@ -169,8 +167,12 @@ function update() {
   requestAnimationFrame(update.bind(this));
 }
 
-window.onload = function(){
-  document.getElementById("icon").style.display = "none";
-  document.getElementById("container-div").style.display = "block";
-  update();
+window.onload = function () {
+  if(!window.location.hash) {
+    window.location = window.location + '#loaded';
+    window.location.reload();
+  }
+  $("#icon").fadeOut("slow");
+  $("#container-div").fadeIn("slow");
+  setTimeout(update, 500);
 }
