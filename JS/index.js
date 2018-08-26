@@ -112,6 +112,7 @@ function writeText(canvas, context, text) {
   context.font = size + "px Montserrat";
   context.fillStyle = "#111111";
   context.textAlign = "center";
+  context.textShadow = "1px 1px 2px red";
   var lineheight = 70;
   var lines = text.split("\n");
   for (var i = 0; i < lines.length; i++) {
@@ -187,10 +188,8 @@ function playAudio() {
 }
 
 function pauseAudio() {
-  console.log('Here1');
   document.getElementById("volume-off").style.display = "block";
   document.getElementById("volume-on").style.display = "none";
-  console.log('Here2');
   musicDiv.pause();
 }
 
