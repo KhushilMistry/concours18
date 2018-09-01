@@ -231,7 +231,7 @@ body {
     z-index: 30;
     position: absolute;
     bottom: 25px;
-    left: 25px;
+    right: 25px;
 }
 
 .icon-link {

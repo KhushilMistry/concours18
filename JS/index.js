@@ -176,11 +176,12 @@ window.onload = function () {
   $("#icon").fadeOut("slow");
   $("#container-div").fadeIn("slow");
   setTimeout(update, 500);
-  playAudio();
+  // playAudio();
 }
 
 var musicDiv = document.getElementById("myAudio");
 
+/*
 function playAudio() {
   document.getElementById("volume-off").style.display = "none";
   document.getElementById("volume-on").style.display = "block";
@@ -197,6 +198,7 @@ musicDiv.addEventListener('ended', function() {
   this.currentTime = 0;
   this.play();
 }, false);
+*/
 
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
