@@ -52,7 +52,7 @@ var Particle = function () {
     this.w = $(window).width();
     this.h = $(window).height();
     this.radius = 0.5 + Math.random() * 20;
-    this.color = this.radius > 5 ? "#FF5E4C" : "#ED413C"; //this.randomColor()
+    this.color = this.radius > 5 ? "#ff0000" : "#ED413C"; //this.randomColor()
   }
 
   _createClass(Particle, [{
@@ -112,7 +112,6 @@ function writeText(canvas, context, text) {
   context.font = size + "px Montserrat";
   context.fillStyle = "#111111";
   context.textAlign = "center";
-  context.textShadow = "1px 1px 2px red";
   var lineheight = 70;
   var lines = text.split("\n");
   for (var i = 0; i < lines.length; i++) {
