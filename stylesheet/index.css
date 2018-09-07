@@ -51,9 +51,9 @@ body {
 }
 
 .video-div {
-    opacity: 0.5;
-    -moz-opacity: 0.5;
-    filter: alpha(opacity=50);
+    opacity: 0.35;
+    -moz-opacity: 0.35;
+    filter: alpha(opacity=35);
     z-index: 1;
     height: 50vh;
 }
