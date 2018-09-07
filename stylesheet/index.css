@@ -51,6 +51,9 @@ body {
 }
 
 .video-div {
+    opacity: 0.5;
+    -moz-opacity: 0.5;
+    filter: alpha(opacity=50);
     z-index: 1;
     height: 50vh;
 }
@@ -66,55 +69,38 @@ canvas {
 }
 
 #cricket {
-    opacity: 0.35;
-    -moz-opacity: 0.35;
-    filter: alpha(opacity=35);
-    background-image: url(../assets/gif/home/cricket-min.gif);
+    background-image: url(../assets/gif/home/cricket.gif);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
 #football {
-    opacity: 0.35;
-    -moz-opacity: 0.35;
-    filter: alpha(opacity=35);
-    background-image: url(../assets/gif/home/football-min.gif);
+    background-image: url(../assets/gif/home/football.gif);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
 #volleyball {
-    opacity: 0.35;
-    -moz-opacity: 0.35;
-    filter: alpha(opacity=35);
-    background-image: url(../assets/gif/home/volleyball-min.gif);
+    background-image: url(../assets/gif/home/volleyball.gif);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
 #tabletennis {
-    opacity: 0.35;
-    -moz-opacity: 0.35;
-    filter: alpha(opacity=35);
-    background-image: url(../assets/gif/home/tabletennis-min.gif);
+    background-image: url(../assets/gif/home/tabletennis.gif);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
 #badminton {
-    opacity: 0.35;
-    -moz-opacity: 0.35;
-    filter: alpha(opacity=35);
-    background-image: url(../assets/gif/home/badminton-min.gif);
+    
+    background-image: url(../assets/gif/home/badminton.gif);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 
 #basketball {
-    opacity: 0.35;
-    -moz-opacity: 0.35;
-    filter: alpha(opacity=35);
-    background-image: url(../assets/gif/home/basketball-min.gif);
+    background-image: url(../assets/gif/home/basketball.gif);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
