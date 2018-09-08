@@ -14,11 +14,9 @@ body {
 }
 
 .heading-container {
-    background-image: url("../assets/gif/home/cricket-min.gif"), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    background-image: url("../assets/images/background/contact.svg");
     background-blend-mode: overlay;
     height: 350px;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
 }
 
 .heading {

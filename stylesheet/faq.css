@@ -16,11 +16,8 @@ body {
 }
 
 .heading-container {
-    background-image: url("../assets/gif/home/cricket-min.gif"), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
-    background-blend-mode: overlay;
+    background-image: url("../assets/images/background/faq.svg");
     height: 350px;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
 }
 
 .heading {
