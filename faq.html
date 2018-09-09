@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Concours'18</title>
@@ -8,105 +9,114 @@
     <link rel="stylesheet" type="text/css" href="stylesheet/utils.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="./assets/images/logo.png">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125487432-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-125487432-1');
+    </script>
+
 </head>
+
 <body>
 
-<div class="icon" id="icon">
-    <div class="hexagon"></div>
-    <div class="lines"></div>
-    <div class="lines"></div>
-    <div class="lines"></div>
-</div>
+    <div class="icon" id="icon">
+        <div class="hexagon"></div>
+        <div class="lines"></div>
+        <div class="lines"></div>
+        <div class="lines"></div>
+    </div>
 
-<div id="container-div">
-    <div class="heading-container">
-        <p class="heading">F A Q</p>
-    </div>
-    <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-            <a href="index.html">HOME</a>
-            <a href="faq.html">FAQ</a>
-            <a href="events.html">EVENTS</a>
-            <a href="https://concours-2018.herokuapp.com/" target="_blank">REGISTER</a>
-            <a href="contact.html">CONTACT</a>
+    <div id="container-div">
+        <div class="heading-container">
+            <p class="heading">F A Q</p>
+        </div>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">HOME</a>
+                <a href="faq.html">FAQ</a>
+                <a href="events.html">EVENTS</a>
+                <a href="https://concours-2018.herokuapp.com/" target="_blank">REGISTER</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+        </div>
+        <div class="logo-container">
+            <img src="./assets/images/logo.png" width="70">
+        </div>
+        <div class="icon-container">
+            <a class="icon-link" href="https://www.facebook.com/ConcoursDaiict/" target="_blank"><i class="fa fa-facebook-official fa-lg"
+                    aria-hidden="true"></i></a>
+            <a class="icon-link" href="https://www.instagram.com/sportsatdaiict/" target="_blank"><i class="fa fa-instagram fa-lg"
+                    aria-hidden="true"></i></a>
+            <a class="icon-link" href="mailto:daiictconcours@gmail.com"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a>
+        </div>
+        <div class="menu-icon" onclick="openNav()"><i class="fa fa-th-large fa-2x fa-menu-icon" aria-hidden="true"></i>
+        </div>
+        <div class="container faq_section">
+            <div class="FaQ_Each">
+                <section class="box">
+                    <span>
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                        <i class="fa fa-minus" id="other" aria-hidden="true"></i>
+                    </span>
+                    &nbsp;&nbsp;<span>Are the matches knockout or a league ?</span>
+                </section>
+                <section class="draw">
+                    Depending on the number of participants different sports will have different formats. More the participants the more the
+                    likelihood of it being a knockout.
+                </section>
+            </div>
+            <div class="FaQ_Each">
+                <section class="box">
+                    <span>
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                        <i class="fa fa-minus" id="other" aria-hidden="true"></i>
+                    </span>
+                    &nbsp;&nbsp;<span>Accomodation? on/off campus ?</span>
+                </section>
+                <section class="draw">
+                    All female participants will be provided accomodation in campus. We will try to do the same for all male participants. If
+                    the number exceeds our capacity accomodation will be provided elsewhere close to the campus.
+                </section>
+            </div>
+            <div class="FaQ_Each">
+                <section class="box">
+                    <span>
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                        <i class="fa fa-minus" id="other" aria-hidden="true"></i>
+                    </span>
+                    &nbsp;&nbsp;<span>Is it necessary that the team have to participate for all the sports from a particular
+                        college ?</span>
+                </section>
+                <section class="draw">
+                    No, you will have to register before the event to be able to take part but you can take part in fun events.
+                </section>
+            </div>
+            <div class="FaQ_Each">
+                <section class="box">
+                    <span>
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                        <i class="fa fa-minus" id="other" aria-hidden="true"></i>
+                    </span>
+                    &nbsp;&nbsp;<span>Is there any proof we need to bring when we come to play ?</span>
+                </section>
+                <section class="draw">
+                    You are required to get the latest fee receipt of college and an original ID proof issued by the institute for each participant.
+                </section>
+            </div>
         </div>
     </div>
-    <div class="logo-container">
-        <img src="./assets/images/logo.png" width="70">
-    </div>
-    <div class="icon-container">
-        <a class="icon-link" href="https://www.facebook.com/ConcoursDaiict/" target="_blank"><i
-                class="fa fa-facebook-official fa-lg" aria-hidden="true"></i></a>
-        <a class="icon-link" href="https://www.instagram.com/sportsatdaiict/" target="_blank"><i
-                class="fa fa-instagram fa-lg" aria-hidden="true"></i></a>
-        <a class="icon-link" href="mailto:daiictconcours@gmail.com"><i class="fa fa-envelope fa-lg"
-                aria-hidden="true"></i></a>
-    </div>
-    <div class="menu-icon" onclick="openNav()"><i class="fa fa-th-large fa-2x fa-menu-icon" aria-hidden="true"></i>
-    </div>
-    <div class="container faq_section">
-        <div class="FaQ_Each">
-            <section class="box">
-		  	<span>
-		  		<i class="fa fa-plus" aria-hidden="true"></i>
-		  		<i class="fa fa-minus" id="other" aria-hidden="true"></i>
-		  	</span>
-                &nbsp;&nbsp;<span>Are the matches knockout or a league ?</span>
-            </section>
-            <section class="draw">
-                Depending on the number of participants different sports will have different formats. More the
-                participants the more the likelihood of it being a knockout.
-            </section>
-        </div>
-        <div class="FaQ_Each">
-            <section class="box">
-		  	<span>
-		  		<i class="fa fa-plus" aria-hidden="true"></i>
-		  		<i class="fa fa-minus" id="other" aria-hidden="true"></i>
-		  	</span>
-                &nbsp;&nbsp;<span>Accomodation? on/off campus ?</span>
-            </section>
-            <section class="draw">
-                All female participants will be provided accomodation in campus. We will try to do the same for all male
-                participants. If the number exceeds our capacity accomodation will be provided elsewhere close to the
-                campus.
-            </section>
-        </div>
-        <div class="FaQ_Each">
-            <section class="box">
-		  	<span>
-		  		<i class="fa fa-plus" aria-hidden="true"></i>
-		  		<i class="fa fa-minus" id="other" aria-hidden="true"></i>
-		  	</span>
-                &nbsp;&nbsp;<span>Is it necessary that the team have to participate for all the sports from a particular college ?</span>
-            </section>
-            <section class="draw">
-                No, you will have to register before the event to be able to take part but you can take part in fun
-                events.
-            </section>
-        </div>
-        <div class="FaQ_Each">
-            <section class="box">
-		  	<span>
-		  		<i class="fa fa-plus" aria-hidden="true"></i>
-		  		<i class="fa fa-minus" id="other" aria-hidden="true"></i>
-		  	</span>
-                &nbsp;&nbsp;<span>Is there any proof we need to bring when we come to play ?</span>
-            </section>
-            <section class="draw">
-                You are required to get the latest fee receipt of college and an original ID proof issued by the
-                institute for each participant.
-            </section>
-        </div>
-    </div>
-</div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-<script src="JS/utils.js"></script>
-<script src="JS/faq.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="JS/utils.js"></script>
+    <script src="JS/faq.js"></script>
 
 </body>
+
 </html>
