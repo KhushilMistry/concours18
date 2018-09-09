@@ -51,9 +51,9 @@ body {
 }
 
 .video-div {
-    opacity: 0.35;
-    -moz-opacity: 0.35;
-    filter: alpha(opacity=35);
+    opacity: 0.5;
+    -moz-opacity: 0.5;
+    filter: alpha(opacity=50);
     z-index: 1;
     height: 50vh;
 }
@@ -286,6 +286,10 @@ body {
     top: 20px;
     right: 45px;
     font-size: 60px;
+}
+
+canvas{
+    z-index: 200;
 }
 
 @media screen and (max-height: 450px) {
