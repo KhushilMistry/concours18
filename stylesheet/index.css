@@ -214,7 +214,7 @@ body {
 
 
 .icon-container {
-    z-index: 30;
+    z-index: 300;
     position: absolute;
     bottom: 25px;
     right: 25px;
@@ -225,7 +225,7 @@ body {
 }
 
 .menu-icon {
-    z-index: 30;
+    z-index: 300;
     position: absolute;
     top: 25px;
     right: 25px;
