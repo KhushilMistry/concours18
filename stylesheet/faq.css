@@ -6,7 +6,6 @@ body {
 }
 
 
-
 #container-div {
     display: none;
 }
@@ -16,7 +15,8 @@ body {
 }
 
 .heading-container {
-    background-image: url("../assets/images/background/faq.svg");
+    background-color: #85FFBD;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
     height: 350px;
 }
 
@@ -26,8 +26,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #d3d3d3;
+    color: black;
     font-size: 54px;
+}
+
+.fa-menu-icon {
+    color: black !important;
 }
 
 .faq_section {

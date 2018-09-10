@@ -14,8 +14,13 @@ body {
 }
 
 .heading-container {
-    background-image: url("../assets/images/background/event.svg");
+    background-color: #FAD961;
+    background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);
     height: 350px;
+}
+
+.fa-menu-icon {
+    color: black !important;
 }
 
 .heading {
@@ -24,7 +29,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #d3d3d3;
+    color: black;
     font-size: 54px;
 }
 
