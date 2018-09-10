@@ -39,7 +39,11 @@ var canvas = c1.context;
 
 // $("body").append(tela);
 $("body").append(c3.canvas);
-writeText(c2.canvas, c2.context, "CONCOURS");
+if(window.innerWidth <= 800 && window.innerHeight <= 600) {
+  writeText(c2.canvas, c2.context, "CONCOURS", 60);
+} else {
+  writeText(c2.canvas, c2.context, "CONCOURS", 100);
+}
 var Particle = function () {
   function Particle(canvas, options) {
     _classCallCheck(this, Particle);
@@ -107,8 +111,8 @@ function createCanvas(properties) {
 
 }
 
-function writeText(canvas, context, text) {
-  var size = 100;
+function writeText(canvas, context, text, sizeDefine) {
+  var size = sizeDefine;
   context.font = size + "px Montserrat";
   context.fillStyle = "#111111";
   context.textAlign = "center";
