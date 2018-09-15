@@ -300,3 +300,9 @@ canvas{
         right: 35px;
     }
 }
+
+@media only screen and (max-width : 767px){
+    #volleyball, #tabletennis, #badminton, #cricket{
+        display: none;
+    }
+}

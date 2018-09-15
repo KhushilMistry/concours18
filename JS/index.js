@@ -39,8 +39,8 @@ var canvas = c1.context;
 
 // $("body").append(tela);
 $("body").append(c3.canvas);
-if(window.innerWidth <= 800 && window.innerHeight <= 600) {
-  writeText(c2.canvas, c2.context, "CONCOURS", 60);
+if(window.innerWidth <= 800 || window.innerHeight <= 600) {
+  writeText(c2.canvas, c2.context, "CONCOURS", 50);
 } else {
   writeText(c2.canvas, c2.context, "CONCOURS", 100);
 }
